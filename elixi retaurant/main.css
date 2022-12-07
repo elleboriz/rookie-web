@@ -1,0 +1,59 @@
+body {
+  background-image: url(/images/backg.jpg);
+  background-size: cover;
+  font-family: Dancing Script, cursive;
+  background-repeat: no-repeat;
+}
+div {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  width: 500px;
+  background: lightgoldenrodyellow;
+  text-align: center;
+  background: repeating-linear-gradient(lightgoldenrodyellow, orangered);
+  border-radius: 15px;
+}
+h1 {
+  font-family: Pacifico, sans-serif;
+  font-size: px;
+  color: orangered;
+  text-transform: uppercase;
+}
+h2 {
+  margin-top: -10px;
+  font-size: 50px;
+}
+h3 {
+  margin-top: -20px;
+  font-size: 25px;
+}
+hr {
+  color: orange;
+  /* background-color: orange; */
+  border-color: orange;
+  width: 70%;
+}
+
+.food {
+  display: inline-block;
+  text-align: left;
+  width: 25%;
+}
+.price {
+  display: inline-block;
+  text-align: right;
+  width: 25%;
+}
+
+/* footer */
+footer {
+  font-size: 15px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(250, 229, 204);
+}

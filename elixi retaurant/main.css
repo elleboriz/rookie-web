@@ -1,6 +1,7 @@
 body {
   background-image: url(/images/backg.jpg);
   background-size: cover;
+  background-position: center;
   font-family: Dancing Script, cursive;
   background-repeat: no-repeat;
 }

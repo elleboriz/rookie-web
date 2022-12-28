@@ -1,0 +1,135 @@
+/* nav bar */
+
+.header {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(124, 250, 113);
+  padding-top: 20px;
+  text-transform: capitalize;
+  cursor: default;
+  border-bottom: 3px solid rgb(17, 141, 5);
+}
+.logo {
+  padding: 5px 2px 3px 2px;
+  margin: -16px 4px 8px 20px;
+  float: left;
+  color: black;
+  text-decoration: underline;
+}
+.logo:hover {
+  letter-spacing: 1px;
+  transition-property: letter-spacing;
+  transition-duration: 300ms;
+}
+
+.nav {
+  display: inline-block;
+}
+.header li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+.header li a {
+  border-right: 2px solid rgb(17, 141, 5);
+  padding: 4px 8px;
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+li a:hover {
+  letter-spacing: 4px;
+  background: rgb(17, 141, 5);
+  transition-property: background, letter-spacing;
+  transition-duration: 1s;
+}
+
+.header ul {
+  margin: -8px 15px 1px 0px;
+  text-align: right;
+  word-spacing: 30px;
+  box-sizing: border-box;
+}
+/* main login */
+main {
+  clear: both;
+}
+
+label {
+  margin-left: -105px;
+  text-transform: capitalize;
+}
+label[for="email"] {
+  margin-left: -130px;
+}
+
+.container {
+  padding: 10px;
+  margin: 4rem auto;
+  width: 230px;
+  background-color: rgb(17, 141, 5);
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.container h2 {
+  text-align: center;
+  margin: 4px 0;
+  cursor: default;
+}
+label input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+input {
+  display: block;
+  margin: 2px auto 0px auto;
+  background-color: rgb(124, 250, 113);
+  border: 1px solid;
+  padding: 3px 0px 4px 4px;
+  color: black;
+  border-radius: 2px;
+}
+input:hover {
+  background-color: rgb(154, 226, 147);
+}
+.container a:hover {
+  color: rgb(154, 226, 147);
+}
+input[type="submit"] {
+  margin-top: 20px;
+  width: 165px;
+  color: rgb(124, 250, 113);
+  background-color: black;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: rgb(1, 41, 10);
+}
+p {
+  font-size: smaller;
+}
+.container a {
+  text-decoration: none;
+  color: rgb(124, 250, 113);
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+.footer {
+  margin: 0 auto;
+  height: 100%;
+  width: 30%;
+  justify-content: space-between;
+}
+.footer li {
+  text-align: left;
+  font-size: 10px;
+  font-family: sans-serif;
+}

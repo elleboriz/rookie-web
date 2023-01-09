@@ -1,0 +1,88 @@
+:root {
+  --white: white;
+  --black: black;
+  --primarycolorone: grey;
+  --primarycolortwo: #404142;
+  --primaryfontsize: 30px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+/* nav of body */
+
+nav {
+  position: fixed;
+  width: 250px;
+  font-size: 25px;
+  border-right: 2px solid black;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin-left: -38px;
+  background-color: var(--primarycolorone);
+}
+
+/* haeding of nav */
+nav header {
+  margin-top: 20px;
+  font-size: 35px;
+  letter-spacing: 1px;
+  margin-left: 45px;
+  color: var(--black);
+}
+
+/* list of nav */
+nav li {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--black);
+  list-style: none;
+}
+nav li:first-of-type {
+  padding-top: 30px;
+  border-top: 1px solid var(--black);
+}
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--white);
+}
+nav a:hover {
+  color: #99262c;
+  transition: color 200ms ease-in;
+}
+
+/* main of body */
+main {
+  min-width: 550px;
+  /* add max width as media query to succeed */
+  margin-left: 210px;
+  padding-right: 20px;
+  padding-top: 5px;
+  background-color: white;
+  padding-left: 30px;
+  padding-bottom: 1px;
+}
+main h1 {
+  text-align: center;
+  color: var(--primarycolortwo);
+  padding-bottom: 33px;
+  text-decoration: underline;
+}
+main header {
+  font-size: var(--primaryfontsize);
+}
+main span {
+  color: #99262c;
+}
+.main-section {
+  margin-bottom: 5rem;
+}
+main img {
+  width: 300px;
+  border-radius: 5px;
+}

@@ -4,6 +4,9 @@ body{
     padding:0 20px;
     margin: 0;
     box-sizing: border-box;
+    max-width: 500px;
+    min-width: 400px;
+    max-height: 300px;
     
 }
 h1{
@@ -19,16 +22,31 @@ nav{
 /* input style  */
 
 #note-input{
-    width:100%;
+    width:fit-content;
     
 }
-
-
+/* svg{
+    
+    padding: 4px;
+    border: 1px solid rgb(206, 134, 134);
+    border-radius: 25%;
+    background-color: rgba(255, 0, 0, 0.116);
+    width: 10px;
+    margin-top: 5px;
+    
+    
+}
+svg:hover{
+    background-color: red;
+}
+svg:active{
+    background-color: rgb(192, 13, 13);
+} */
 .input{
     display: block;
     font-size: 15px;
     border: 1px solid green;
-    width:100%;
+    width:98%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: .8px;
     padding: 4px;
@@ -54,18 +72,28 @@ button{
     color: white;
     border-radius: 3px;
 }
-#del-btn{
-    background-color: rgb(172, 9, 9);
+#del-btn {
+    
     background-color:transparent;
     border: 1px solid rgb(172, 9, 9);
     color: rgb(226, 16, 16);
 }
-#del-btn:hover{
+b{
+    color: red;
+}
+#del-btn:hover {
     background-color: rgb(224, 42, 42);
     color: white;
+}s
+#del-btn:active  {
+    background-color: rgb(172, 9, 9);
 }
-#note-input #add-btn{  
-    width: inherit;
+#note-input {  
+    /* width: inherit; */
+    width:99%;
+}
+#add-btn{
+    width: 100%;
 }
 button:hover{
     background-color: rgb(22, 172, 17);
@@ -83,9 +111,11 @@ button:active{
 /* redering style */
 
 #notes-box{
-
+max-height: 400px;
+overflow-y: scroll;
 }
 .new-note{ 
+    position: relative;
     padding:4px 8px;
     margin: 8px 0 ;
     background-color: rgb(197, 241, 197);

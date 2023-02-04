@@ -65,16 +65,17 @@ showBtnEl.addEventListener('click', function(){
        implement action for delete button in show all
 
 
-
-
-
-
-
-
-
-
-
-
+      yyyyyy           yyyyyy                   yyyyyy
+       yyyyy          yyyyy                yyyyy      yyyyy   
+        yyyyy        yyyy                 yyyyy       yyyyyy
+          yyyyy    yyyy                  yyyyy         yyyyyy
+            yyyy  yyy                    yyyyy         yyyyyy 
+             yyyyyy                      yyyyy         yyyyy
+             yyyyy                       yyyyy         yyyyy
+             yyyyy                       yyyyy        yyyyy
+             yyyyy                        yyyy       yyyyy
+             yyyyy                         yyyy    yyyyy
+             yyyyy                           yyyyyyyyy
 
 
        implement action for delete button in show all

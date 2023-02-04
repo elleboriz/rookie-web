@@ -53,6 +53,9 @@ svg:active{
     color: green;
     background-color: rgb(224, 245, 224);
 }
+b{
+    color: red;
+}
 label{
     font-weight: bold;
 }
@@ -78,14 +81,16 @@ button{
     border: 1px solid rgb(172, 9, 9);
     color: rgb(226, 16, 16);
 }
-b{
-    color: red;
+
+#test-delbtn , .test-delbtn{
+    background-color: rgb(172, 9, 9);
+    border: 1px solid rgb(172, 9, 9);
 }
-#del-btn:hover {
+#del-btn:hover ,#test-delbtn:hover , .test-delbtn:hover{
     background-color: rgb(224, 42, 42);
     color: white;
-}s
-#del-btn:active  {
+}
+#del-btn:active , #test-delbtn:active , .test-delbtn:active {
     background-color: rgb(172, 9, 9);
 }
 #note-input {  

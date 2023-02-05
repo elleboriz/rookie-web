@@ -8,32 +8,42 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
-    <!-- <h1>JOT DOWN</h1>  -->
-    <button id="show-btn">SHOW ALL JOTS</button>
-    <button id="del-btn">DELETE ALL JOTS</button>
-    
-  </nav>
+    <div class="container">
+      <div class="content">
+        <nav>
+          <!-- <h1>JOT DOWN</h1>  -->
+          <button id="show-btn">SHOW ALL JOTS</button>
+          <button id="del-btn">DELETE ALL JOTS</button>
+        </nav>
 
-    <div id="note-input">
-      
-    <label for="note-title">TITLE</label>
-   <input placeholder="jot_title....." required class="input" id="note-title" type="text"><br>
-   
-   <label for="note-body">BODY</label>
-   <textarea placeholder="New jot....." required class="input" name="note-body" id="note-body" cols="40" rows="10"></textarea>
-   
-   <button id="add-btn">JOT DOWN</button>
-   <hr>
-  </div>
-  <div id="notes-box" >
-    
+        <div id="note-input">
+          <label for="note-title">TITLE</label>
+          <input
+            placeholder="jot_title....."
+            required
+            class="input"
+            id="note-title"
+            type="text"
+          /><br />
 
-  </div>
+          <label for="note-description">BODY</label>
+          <textarea
+            placeholder="New jot....."
+            required
+            class="input"
+            name="note-description"
+            id="note-description"
+            cols="40"
+            rows="10"
+          ></textarea>
 
+          <button id="add-btn">JOT DOWN</button>
+          <hr />
+        </div>
+      </div>
+      <div id="notes-box"></div>
+    </div>
 
-    <script  src="main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
-
-

@@ -1,0 +1,39 @@
+$primary-color : #292929;
+$secondary-color: #888888;
+$thetiary-color: #ddd;
+$theme-color : rgb(241, 163, 18);
+$special-color: orangered;
+$standard-margin: 5%;
+$standard-padding: 5%;
+
+@mixin font-wieght ($fw) {
+    @if $fw == 'small'{
+        font-weight: 400 ;
+    }
+    @else if $fw == 'medium'{
+        font-weight: 600 ;
+    }
+    @else if $fw == 'big'{
+        font-weight: 900;
+    }
+    @else{
+        font-weight: none;
+    }
+}
+
+@mixin menu_sudos{
+    position: absolute;
+    right: 15px;
+    width: 35px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: $thetiary-color;
+}
+
+@mixin carouselnav_arrow{
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: $theme-color;
+    position: absolute;
+}

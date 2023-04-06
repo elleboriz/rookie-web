@@ -1,0 +1,275 @@
+@import 'resets';
+@import 'variables';
+
+
+
+body{
+    background-color: $primary-color;
+    color: white;  
+}
+
+// nav stylings
+.nav{
+        
+    background-color: lighten($color: $primary-color, $amount: 2);
+    .navbar{
+        display: flex;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+
+        .navbar-link{
+            display: inline-block;
+            h2{
+                position: absolute;
+                left: 15px;
+                top: 30%;
+            }
+
+            .navbar-menu{                   
+                top: 50%;
+
+                @include menu_sudos;
+                                    
+            }
+            &::before{
+                top: 30%;
+                content: '';
+                @include menu_sudos;
+            }
+            &::after{
+                bottom: 30%;
+                content: '';
+                @include menu_sudos;
+            }
+        }
+    }      
+}
+
+ // main styling
+
+main {
+    .intro{
+        font-size: large;
+        margin-bottom: 2rem;
+        background-color: rgba(197, 132, 11, 0.137);
+        
+
+        .profile{
+            // other bagckround config
+            // background: url(/dist/60766.jpg) center  ;
+            // opacity: 50% ;
+            background:linear-gradient(to bottom , rgba($theme-color,0.6),rgba($theme-color,0.2)),url(/dist/60766.jpg) center  ;
+            
+            width: 100%;
+            height: 22rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            position: sticky;
+            
+        }
+        &-id{
+            margin-top: 2rem;
+            border-bottom: 1px solid $theme-color;
+            width: fit-content;
+            margin-left: $standard-margin;
+            padding-bottom: 0.5rem;
+
+            
+            .name{
+                
+                margin-left: 1rem;
+                font-size: 2rem;
+                color: $theme-color;
+                font-family: system-ui , sans-serif;
+                
+                
+            }
+
+            
+        }
+
+
+        &-about{
+            line-height: 2em;
+            padding-bottom: $standard-padding;
+            margin: $standard-margin;
+            .skills{
+                margin-top: $standard-margin;
+                .tech{
+                    margin-bottom: $standard-margin;
+                }
+               .tech , .soft{
+                height: fit-content;
+                background-color: $primary-color;
+                list-style: none;
+                padding: 1rem 0.5rem 0.5rem 0.8em;
+                border-radius: 10px;
+                h3{
+                    color: $theme-color;
+                }
+                li{
+                    padding-bottom: 10px;
+                    padding-top: 15px;
+                    border-bottom: 1px solid $theme-color;
+                }
+               } 
+            }
+
+        }
+
+
+        
+    }
+    .carousel{
+        width: 100%;
+        max-width: 100%;
+        height: 15em;
+        position: relative;
+        margin-bottom: 2em;
+        
+
+        .carousel_box{
+            height: 100%;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            .carousel_list{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                position: relative;
+
+                .carousel_content{
+                    height: 100%;
+                    width: 60%;
+                    background-color: $thetiary-color;
+                    border-radius: 10px;
+                    color: black;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: 0;
+                    transition: all  1s ease-in;
+                }
+            }
+        }
+
+        .carousel_btn{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            font-size:30px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.247);
+            border-radius: 50%;
+            cursor: pointer;
+            padding: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 9;
+                       
+        }
+        .carousel_btn--left{
+            left: 1.5rem;
+        }
+        .carousel_btn:hover,.carousel_btn:active{
+            background-color: rgba(0, 0, 0, 0.562);
+        }
+        .carousel_btn:active{
+            color: #ddd;
+        }
+
+        .carousel_btn--right{
+            right: 1.5rem;
+        }
+
+        .carousel_nav{
+            height: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .carousel_nav-pointer{
+                width: 10px;
+                height: 10px;
+                background-color: rgba(0, 0, 0, 0.356);
+                margin: 2px 5px;
+                border-radius: 50%;
+            }
+
+            .pointer-active{
+                background-color: rgba(0, 0, 0, 0.712);
+            }
+        }
+        
+    }
+    .contact{
+        width: 100%;
+        height: 12em;
+        margin: 3rem 0 0 0;
+        text-align: center;
+        .contact-email{
+            font-size: 1.5em;
+            margin: 1rem 0;
+            button{
+                margin: 1rem 0;
+                font-size: 1em;
+                width: 140px;
+                height: 40px;
+                background-color: $theme-color;
+                border: 1px solid rgba($theme-color,0.6);
+                border-radius: 10px;
+            }
+            button:hover{
+                background-color:rgba($theme-color,0.6) ;
+                
+            }
+            button:active{
+                border: 1px solid $theme-color;
+            }
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    height: 200px;
+    background-color: $secondary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .social_networks .social_network{
+        list-style: none;
+        margin: 1em 0;
+        color: $primary-color;
+        font-size: larger;
+        cursor: pointer;
+
+    }
+    .social_network:hover{
+        color: $theme-color;
+        transition:all .1s;
+    }
+    .copyright{
+        font-size: small;
+    }
+}
+
+@media (min-width: 810px){
+    @import 'tablet' ;
+}
+
+@media (min-width: 1460px){
+    @import 'monitors' ;
+}
